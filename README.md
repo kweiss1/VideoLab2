@@ -84,7 +84,7 @@ RUN:
 python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG"     --visualize-path /home/alumnos/e521295/Downloads/image_folder     --output-folder /home/alumnos/e521295/output_videos --output-video
 
 
-
+python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml R_101.pth --suffix ".JPEG"     --visualize-path /home/alumnos/e521295/Downloads/image_folder     --output-folder /home/alumnos/e521295/output_videos --output-video
 
 
 
