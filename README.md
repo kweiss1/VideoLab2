@@ -61,6 +61,14 @@ AttributeError: module 'torch.cuda' has no attribute 'amp'
 
 FILE NUMBER SEVEN:
 
+AttributeError: module 'torch.cuda' has no attribute 'amp'
+
+/home/alumnos/e521295/.conda/envs/MEGA/lib/python3.7/site-packages/apex-0.1-py3.7.egg/apex/transformer/pipeline_parallel/schedules/fwd_bwd_pipelining_without_interleaving.py
+
+
+
+FILE NUMBER EIGHT:
+
 cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'putText'
 > Overload resolution failed:
 >  - Can't parse 'org'. Sequence item with index 0 has a wrong type
@@ -69,6 +77,11 @@ cv2.error: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'putText'
 /home/alumnos/e521295/mega.pytorch/demo/predictor.py
 
 
+
+
+RUN:
+
+python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG"     --visualize-path /home/alumnos/e521295/Downloads/image_folder     --output-folder /home/alumnos/e521295/output_videos --output-video
 
 
 
