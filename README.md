@@ -2,8 +2,11 @@
 
 Installation:
 
-conda create --name MEGA -y python=3.7 && source activate MEGA && conda install -y ipython pip && pip install ninja yacs cython matplotlib tqdm opencv-python scipy && conda install -y pytorch==1.2.0 torchvision==0.4.0 cudatoolkit=10.0 -c pytorch && export INSTALL_DIR=$PWD && git clone https://github.com/cocodataset/cocoapi.git && cd cocoapi/PythonAPI && python setup.py build_ext install && cd $INSTALL_DIR && git clone https://github.com/mcordts/cityscapesScripts.git && cd cityscapesScripts && python setup.py build_ext install && cd $INSTALL_DIR && git clone https://github.com/NVIDIA/apex.git && cd apex && git checkout a1df804 && python setup.py build_ext install && cd $INSTALL_DIR && git clone https://github.com/Scalsol/mega.pytorch.git && cd mega.pytorch && python setup.py build develop && pip install 'pillow<7.0.0' && unset INSTALL_DIR
+In order to install the BASE and MEGA approaches, the following line needs to be executed in the terminal:
 
+```bash
+conda create --name MEGA -y python=3.7 && source activate MEGA && conda install -y ipython pip && pip install ninja yacs cython matplotlib tqdm opencv-python scipy && conda install -y pytorch==1.2.0 torchvision==0.4.0 cudatoolkit=10.0 -c pytorch && export INSTALL_DIR=$PWD && git clone https://github.com/cocodataset/cocoapi.git && cd cocoapi/PythonAPI && python setup.py build_ext install && cd $INSTALL_DIR && git clone https://github.com/mcordts/cityscapesScripts.git && cd cityscapesScripts && python setup.py build_ext install && cd $INSTALL_DIR && git clone https://github.com/NVIDIA/apex.git && cd apex && git checkout a1df804 && python setup.py build_ext install && cd $INSTALL_DIR && git clone https://github.com/Scalsol/mega.pytorch.git && cd mega.pytorch && python setup.py build develop && pip install 'pillow<7.0.0' && unset INSTALL_DIR
+```
 
 python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --suffix ".JPEG" \
     --visualize-path /home/alumnos/e521295/Downloads/image_folder \
