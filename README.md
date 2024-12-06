@@ -8,7 +8,7 @@ In order to install the BASE and MEGA approaches, the following line needs to be
 conda create --name MEGA -y python=3.7 && source activate MEGA && conda install -y ipython pip && pip install ninja yacs cython matplotlib tqdm opencv-python scipy && conda install -y pytorch==1.2.0 torchvision==0.4.0 cudatoolkit=10.0 -c pytorch && export INSTALL_DIR=$PWD && git clone https://github.com/cocodataset/cocoapi.git && cd cocoapi/PythonAPI && python setup.py build_ext install && cd $INSTALL_DIR && git clone https://github.com/mcordts/cityscapesScripts.git && cd cityscapesScripts && python setup.py build_ext install && cd $INSTALL_DIR && git clone https://github.com/NVIDIA/apex.git && cd apex && git checkout a1df804 && python setup.py build_ext install && cd $INSTALL_DIR && git clone https://github.com/Scalsol/mega.pytorch.git && cd mega.pytorch && python setup.py build develop && pip install 'pillow<7.0.0' && unset INSTALL_DIR
 ```
 
-After this, download and move the files R_101.pth and MEGA_R_101.pth in the folder mega.pytorch.
+After this, download and move the files R_101.pth and MEGA_R_101.pth into the folder mega.pytorch.
 
 Before running the script for the approaches, there are errors that need to be fixed beforehand due to the incompatibility of some of the module versions and their used attributes. Below you will find the locations of the files that needs to be replaced. Download these from the repository and replace their counterparts in their respective locations. The updated files replace some dependencies from the module torch that are incompatible with the version used.
 
