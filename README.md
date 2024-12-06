@@ -10,7 +10,7 @@ conda create --name MEGA -y python=3.7 && source activate MEGA && conda install 
 
 After this, download and move the files R_101.pth and MEGA_R_101.pth into the folder mega.pytorch.
 
-Before running the script for the approaches, there are errors that need to be fixed beforehand due to the incompatibility of some of the module versions and their used attributes. Below you will find the locations of the files that needs to be replaced. Download these from the repository and replace their counterparts in their respective locations. The updated files replace some dependencies from the module torch that are incompatible with the version used.
+Before running the script for the approaches, there are errors that need to be fixed beforehand due to the incompatibility of some of the module versions and their used attributes. Below you will find the locations of the files that need to be replaced. Download these from the repository and replace their counterparts in their respective locations. The updated files replace some dependencies from the module torch that are incompatible with the version used.
 
 
 
