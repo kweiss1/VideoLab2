@@ -122,8 +122,11 @@ Example for the MEGA approach:
 python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml R_101.pth --suffix ".JPEG"     --visualize-path /image_folder     --output-folder /output_videos --output-video
 ```
 
+In order to run the line for videos, the following template should be used.
 
-
+```bash
+python demo/demo.py ${METHOD} ${CONFIG_FILE} ${CHECKPOINT_FILE} --video [--visualize-path ${VIDEO-NAME}] [--output-folder ${FOLDER}] [--output-video]
+```
 
 
 
